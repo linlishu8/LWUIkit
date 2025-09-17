@@ -19,9 +19,7 @@ open class LWBaseViewController: UIViewController {
     /// 四态容器（可直接 showLoading/showEmpty/showError/showContent）
     public let stateView = LWStatefulView()
 
-    // iOS 17+：Trait 变化注册（比如浅/深色切换）
-    @available(iOS 17.0, *)
-    private var traitRegistration: UITraitChangeRegistration?
+    private var lw_traitRegistrationBox: Any?
 
     open override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +42,7 @@ open class LWBaseViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(onThemeChanged), name: .LWThemeDidChange, object: nil)
 
         if #available(iOS 17.0, *) {
-            traitRegistration = registerForTraitChanges([UITraitUserInterfaceStyle.self]) { (vc: LWBaseViewController, _) in
+            lw_traitRegistrationBox = registerForTraitChanges([UITraitUserInterfaceStyle.self]) { (vc: LWBaseViewController, _) in
                 vc.applyTheme()
             }
         }
