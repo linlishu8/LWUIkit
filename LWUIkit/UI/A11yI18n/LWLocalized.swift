@@ -15,6 +15,43 @@
 //  ```
 //
 
+/* 作用：
+   - 用 LWLocalized 取文案；
+   - 监听 LWLanguageDidChange，切语言后刷新界面。
+   使用示例：在任意 VC 里按需绑定。
+
+import UIKit
+
+final class I18nDemoVC: UIViewController {
+    private let titleLabel = UILabel()
+    private let loginButton = UIButton(type: .system)
+    private let emailField = UITextField()
+    private let aboutTextView = UITextView()
+    private var langToken: NSObjectProtocol?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // …布局略…
+        refreshTexts()
+
+        langToken = NotificationCenter.default.addObserver(
+            forName: .LWLanguageDidChange, object: nil, queue: .main
+        ) { [weak self] _ in self?.refreshTexts() }
+    }
+
+    private func refreshTexts() {
+        titleLabel.text = LWLocalized("login.title")                 // UILabel
+        loginButton.setTitle(LWLocalized("common.ok"), for: .normal) // UIButton
+        emailField.placeholder = LWLocalized("login.placeholder.email") // UITextField.placeholder
+        aboutTextView.text = LWLocalized("about.text")               // UITextView
+    }
+
+    // 比如设置页里调用：
+    @objc func switchToChinese() { LWLocalizationManager.shared.setLanguage(code: "zh-Hans") }
+    @objc func switchToEnglish() { LWLocalizationManager.shared.setLanguage(code: "en") }
+}
+ */
+
 import Foundation
 
 public extension Notification.Name {

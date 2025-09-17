@@ -10,13 +10,45 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    private var nav: UINavigationController!
+    private var coordinator: LWNavigationCoordinator!
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let ws = scene as? UIWindowScene else { return }
+        // 1) Window + 空导航控制器
+        let window = UIWindow(windowScene: ws)
+        let nav = UINavigationController()
+        window.rootViewController = nav
+        window.makeKeyAndVisible()
+        self.window = window
+        self.nav = nav
+        
+        // 2) 路由协调器
+        self.coordinator = LWNavigationCoordinator(navigationController: nav)
+        
+        // 3) 注册路由（示例：登录、注册、协议）
+        registerRoutes()
+        
+        // 4) 启动时跳到登录页（或根据登录态决定首页）
+        _ = coordinator.navigate(to: "auth/login", style: .push(animated: false))
+    }
+    
+    private func registerRoutes() {
+        // 登录页（你自己的 VC，例如之前给你的 LWLoginViewController）
+        coordinator.register("auth/login") { _ in
+            return ThemeSwitchDemoViewController()
+        }
+        
+        //            // 注册页举例
+        //            coordinator.register("auth/register") { _ in
+        //                return RegisterViewController()
+        //            }
+        //
+        //            // 半屏选择器：国家区号（配合 LWSheet / iOS14 自动回退）
+        //            coordinator.register("picker/country") { _ in
+        //                // 用于 present/sheet 的路由通常返回要展示的 VC
+        //                return LWCountryCodePickerController()
+        //            }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

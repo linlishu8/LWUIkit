@@ -134,9 +134,9 @@ public final class LWStatefulView: UIView {
 // MARK: - 简易提示视图（标题+副标题+图标+动作）
 final class LWMessageView: UIView {
     private let imageView = UIImageView()
-    private let titleLabel = LWThemedLabel()
-    private let subLabel = LWThemedLabel()
-    private let actionButton = LWThemedButton(type: .system)
+    private let titleLabel = UILabel()
+    private let subLabel = UILabel()
+    private let actionButton = UIButton(type: .system)
     private var action: (() -> Void)?
 
     override init(frame: CGRect) {
@@ -147,14 +147,10 @@ final class LWMessageView: UIView {
 
     private func setup() {
         backgroundColor = .clear
-        titleLabel.style = .primary
         titleLabel.textAlignment = .center
         titleLabel.font = LWTypography.title2.font(weight: .semibold)
 
-        subLabel.style = .secondary
         subLabel.textAlignment = .center
-
-        actionButton.style = .secondary
 
         imageView.contentMode = .scaleAspectFit
         imageView.setContentCompressionResistancePriority(.defaultLow, for: .vertical)

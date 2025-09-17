@@ -12,23 +12,6 @@
 
 import UIKit
 
-// MARK: - Safe Area 便捷方法
-public extension UIView {
-    @discardableResult
-    func lw_pinEdgesToSafeArea(insets: UIEdgeInsets = .zero, activate: Bool = true) -> [NSLayoutConstraint] {
-        translatesAutoresizingMaskIntoConstraints = false
-        let g = safeAreaLayoutGuide
-        let cs = [
-            topAnchor.constraint(equalTo: g.topAnchor, constant: insets.top),
-            leadingAnchor.constraint(equalTo: g.leadingAnchor, constant: insets.left),
-            trailingAnchor.constraint(equalTo: g.trailingAnchor, constant: -insets.right),
-            bottomAnchor.constraint(equalTo: g.bottomAnchor, constant: -insets.bottom)
-        ]
-        if activate { NSLayoutConstraint.activate(cs) }
-        return cs
-    }
-}
-
 // MARK: - 键盘回避辅助
 public final class LWKeyboardAvoider {
     public enum Mode {

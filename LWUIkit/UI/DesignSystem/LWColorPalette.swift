@@ -14,24 +14,24 @@ import UIKit
 /// 品牌颜色盘（包含浅/深色两套方案）
 public struct LWColorPalette {
     public struct Scheme {
-        public let brandPrimary: UIColor
-        public let brandSecondary: UIColor
+        public var brandPrimary: UIColor
+        public var brandSecondary: UIColor
 
-        public let backgroundPrimary: UIColor
-        public let backgroundSecondary: UIColor
-        public let surface: UIColor
+        public var backgroundPrimary: UIColor
+        public var backgroundSecondary: UIColor
+        public var surface: UIColor
 
-        public let textPrimary: UIColor
-        public let textSecondary: UIColor
-        public let textDisabled: UIColor
+        public var textPrimary: UIColor
+        public var textSecondary: UIColor
+        public var textDisabled: UIColor
 
-        public let separator: UIColor
-        public let primaryFill: UIColor
-        public let onPrimary: UIColor
+        public var separator: UIColor
+        public var primaryFill: UIColor
+        public var onPrimary: UIColor
 
-        public let success: UIColor
-        public let warning: UIColor
-        public let error: UIColor
+        public var success: UIColor
+        public var warning: UIColor
+        public var error: UIColor
 
         public init(brandPrimary: UIColor,
                     brandSecondary: UIColor,
