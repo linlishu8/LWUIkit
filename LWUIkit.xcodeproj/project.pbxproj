@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		84F14DEC2E7A7BD200F7F875 /* LWUIkitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWUIkitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F14E582E7A7EA700F7F875 /* LWUIkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWUIkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		84F14DFE2E7A7BD300F7F875 /* Exceptions for "LWUIkitDemo" folder in "LWUIkitDemo" target */ = {
+		84F14E6A2E7A7EA800F7F875 /* Exceptions for "LWUIkit" folder in "LWUIkit" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 84F14DEB2E7A7BD200F7F875 /* LWUIkitDemo */;
+			target = 84F14E572E7A7EA700F7F875 /* LWUIkit */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		84F14DEE2E7A7BD200F7F875 /* LWUIkitDemo */ = {
+		84F14E5A2E7A7EA700F7F875 /* LWUIkit */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				84F14DFE2E7A7BD300F7F875 /* Exceptions for "LWUIkitDemo" folder in "LWUIkitDemo" target */,
+				84F14E6A2E7A7EA800F7F875 /* Exceptions for "LWUIkit" folder in "LWUIkit" target */,
 			);
-			path = LWUIkitDemo;
+			path = LWUIkit;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		84F14DE92E7A7BD200F7F875 /* Frameworks */ = {
+		84F14E552E7A7EA700F7F875 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,18 +42,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		84F14DE32E7A7BD200F7F875 = {
+		84F14E4F2E7A7EA700F7F875 = {
 			isa = PBXGroup;
 			children = (
-				84F14DEE2E7A7BD200F7F875 /* LWUIkitDemo */,
-				84F14DED2E7A7BD200F7F875 /* Products */,
+				84F14E5A2E7A7EA700F7F875 /* LWUIkit */,
+				84F14E592E7A7EA700F7F875 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		84F14DED2E7A7BD200F7F875 /* Products */ = {
+		84F14E592E7A7EA700F7F875 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84F14DEC2E7A7BD200F7F875 /* LWUIkitDemo.app */,
+				84F14E582E7A7EA700F7F875 /* LWUIkit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,64 +61,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		84F14DEB2E7A7BD200F7F875 /* LWUIkitDemo */ = {
+		84F14E572E7A7EA700F7F875 /* LWUIkit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84F14DFF2E7A7BD300F7F875 /* Build configuration list for PBXNativeTarget "LWUIkitDemo" */;
+			buildConfigurationList = 84F14E6B2E7A7EA800F7F875 /* Build configuration list for PBXNativeTarget "LWUIkit" */;
 			buildPhases = (
-				84F14DE82E7A7BD200F7F875 /* Sources */,
-				84F14DE92E7A7BD200F7F875 /* Frameworks */,
-				84F14DEA2E7A7BD200F7F875 /* Resources */,
+				84F14E542E7A7EA700F7F875 /* Sources */,
+				84F14E552E7A7EA700F7F875 /* Frameworks */,
+				84F14E562E7A7EA700F7F875 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				84F14DEE2E7A7BD200F7F875 /* LWUIkitDemo */,
+				84F14E5A2E7A7EA700F7F875 /* LWUIkit */,
 			);
-			name = LWUIkitDemo;
+			name = LWUIkit;
 			packageProductDependencies = (
 			);
-			productName = LWUIkitDemo;
-			productReference = 84F14DEC2E7A7BD200F7F875 /* LWUIkitDemo.app */;
+			productName = LWUIkit;
+			productReference = 84F14E582E7A7EA700F7F875 /* LWUIkit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		84F14DE42E7A7BD200F7F875 /* Project object */ = {
+		84F14E502E7A7EA700F7F875 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
-					84F14DEB2E7A7BD200F7F875 = {
+					84F14E572E7A7EA700F7F875 = {
 						CreatedOnToolsVersion = 16.4;
 					};
 				};
 			};
-			buildConfigurationList = 84F14DE72E7A7BD200F7F875 /* Build configuration list for PBXProject "LWUIkitDemo" */;
+			buildConfigurationList = 84F14E532E7A7EA700F7F875 /* Build configuration list for PBXProject "LWUIkit" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 84F14DE32E7A7BD200F7F875;
+			mainGroup = 84F14E4F2E7A7EA700F7F875;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 84F14DED2E7A7BD200F7F875 /* Products */;
+			productRefGroup = 84F14E592E7A7EA700F7F875 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				84F14DEB2E7A7BD200F7F875 /* LWUIkitDemo */,
+				84F14E572E7A7EA700F7F875 /* LWUIkit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		84F14DEA2E7A7BD200F7F875 /* Resources */ = {
+		84F14E562E7A7EA700F7F875 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,7 +128,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		84F14DE82E7A7BD200F7F875 /* Sources */ = {
+		84F14E542E7A7EA700F7F875 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,7 +138,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		84F14E002E7A7BD300F7F875 /* Debug */ = {
+		84F14E6C2E7A7EA800F7F875 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -147,7 +147,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2VTUDDU8PS;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LWUIkitDemo/Info.plist;
+				INFOPLIST_FILE = LWUIkit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -158,7 +158,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lw.LWUIkitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lw.LWUIkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -166,7 +166,7 @@
 			};
 			name = Debug;
 		};
-		84F14E012E7A7BD300F7F875 /* Release */ = {
+		84F14E6D2E7A7EA800F7F875 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -175,7 +175,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2VTUDDU8PS;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LWUIkitDemo/Info.plist;
+				INFOPLIST_FILE = LWUIkit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -186,7 +186,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lw.LWUIkitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lw.LWUIkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -194,7 +194,7 @@
 			};
 			name = Release;
 		};
-		84F14E022E7A7BD300F7F875 /* Debug */ = {
+		84F14E6E2E7A7EA800F7F875 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -258,7 +258,7 @@
 			};
 			name = Debug;
 		};
-		84F14E032E7A7BD300F7F875 /* Release */ = {
+		84F14E6F2E7A7EA800F7F875 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -318,25 +318,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84F14DE72E7A7BD200F7F875 /* Build configuration list for PBXProject "LWUIkitDemo" */ = {
+		84F14E532E7A7EA700F7F875 /* Build configuration list for PBXProject "LWUIkit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				84F14E022E7A7BD300F7F875 /* Debug */,
-				84F14E032E7A7BD300F7F875 /* Release */,
+				84F14E6E2E7A7EA800F7F875 /* Debug */,
+				84F14E6F2E7A7EA800F7F875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84F14DFF2E7A7BD300F7F875 /* Build configuration list for PBXNativeTarget "LWUIkitDemo" */ = {
+		84F14E6B2E7A7EA800F7F875 /* Build configuration list for PBXNativeTarget "LWUIkit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				84F14E002E7A7BD300F7F875 /* Debug */,
-				84F14E012E7A7BD300F7F875 /* Release */,
+				84F14E6C2E7A7EA800F7F875 /* Debug */,
+				84F14E6D2E7A7EA800F7F875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 84F14DE42E7A7BD200F7F875 /* Project object */;
+	rootObject = 84F14E502E7A7EA700F7F875 /* Project object */;
 }
